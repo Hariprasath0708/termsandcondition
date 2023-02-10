@@ -43,18 +43,17 @@ button[type="submit"] {
   } else {
     alert("You must accept the terms and conditions in order to submit the form.");
   }
+        let a = termsAndConditions
+        window.parent.postMessage(
+       JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: a
+               }),
+                "*"
+           );  
 }
 
-  window.parent.postMessage(
-            JSON.stringify({
-              event_code: "ym-client-event",
-            
-               data:termsAndConditions
-              
-            }),
-            "*"
-          );
-}
+  
 
 
 
