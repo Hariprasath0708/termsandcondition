@@ -42,11 +42,11 @@ button[type="submit"] {
     <script>
       function submitForm() {
   let termsAndConditions = document.getElementById("termsAndConditions");
-  if (termsAndConditions.checked) {
-    localStorage.setItem("termsAndConditions", "accepted");
-  } else {
-    alert("You must accept the terms and conditions in order to submit the form.");
-  }
+//   if (termsAndConditions.checked) {
+//     localStorage.setItem("termsAndConditions", "accepted");
+//   } else {
+//     alert("You must accept the terms and conditions in order to submit the form.");
+//   }
         let a = termsAndConditions
         window.parent.postMessage(
        JSON.stringify({
